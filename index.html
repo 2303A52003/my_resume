@@ -5,48 +5,94 @@
   <title>Vrindha | Resume</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7fa;
       color: #333;
+      line-height: 1.6;
     }
-    h1, h2 { color: #444; }
-    .section {
-      margin-bottom: 40px;
+    header {
+      background: #1a73e8;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    .container {
+      width: 80%;
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      border-bottom: 2px solid #1a73e8;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      color: #1a73e8;
     }
     ul {
-      list-style-type: square;
-      margin-left: 20px;
+      list-style-type: none;
+      padding: 0;
     }
-    /* Timeline Styles */
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+    }
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #1a73e8;
+      font-weight: bold;
+    }
+    /* Timeline */
     .timeline {
       position: relative;
       margin-left: 20px;
       padding-left: 20px;
-      border-left: 3px solid #444;
+      border-left: 3px solid #1a73e8;
     }
     .timeline article {
       margin-bottom: 30px;
       position: relative;
+      padding-left: 10px;
     }
     .timeline article::before {
       content: "";
       position: absolute;
-      left: -11px;
+      left: -12px;
       top: 5px;
       width: 15px;
       height: 15px;
-      background: #444;
+      background: #1a73e8;
       border-radius: 50%;
     }
     .timeline h3 {
       margin: 0;
       font-size: 18px;
-      color: #222;
+      color: #333;
     }
     .timeline span {
       font-size: 14px;
-      color: #777;
+      color: #666;
+    }
+    footer {
+      text-align: center;
+      margin: 40px 0;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
@@ -55,51 +101,51 @@
     <h1>Vrindha</h1>
     <p>Email: 2303a52003@sru.edu.in</p>
     <p>Enthusiastic learner | Passionate about tech & creativity</p>
-    <hr>
   </header>
 
-  <!-- Education Section -->
-  <section class="section" id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>B.Tech in Computer Science</strong>, SR University (2023 – 2027)</li>
-      <li><strong>Intermediate (MPC)</strong>, [College Name], (2021 – 2023)</li>
-      <li><strong>High School</strong>, [School Name], (2010 – 2021)</li>
-    </ul>
-  </section>
+  <div class="container">
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech in Computer Science</strong>, SR University (2023 – 2027)</li>
+        <li><strong>Intermediate (MPC)</strong>, [College Name], (2021 – 2023)</li>
+        <li><strong>High School</strong>, [School Name], (2010 – 2021)</li>
+      </ul>
+    </section>
 
-  <!-- Experience Section -->
-  <section class="section" id="experience">
-    <h2>Experience</h2>
-    <div class="timeline">
-      <article>
-        <h3>Intern - Web Development</h3>
-        <span>ABC Company | May 2024 – Jul 2024</span>
-        <p>Worked on responsive websites and optimized frontend features.</p>
-      </article>
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article>
+          <h3>Intern - Web Development</h3>
+          <span>ABC Company | May 2024 – Jul 2024</span>
+          <p>Worked on responsive websites and optimized frontend features.</p>
+        </article>
 
-      <article>
-        <h3>Open Source Contributor</h3>
-        <span>GitHub | 2023 – Present</span>
-        <p>Contributed to projects, fixed bugs, and implemented small features.</p>
-      </article>
-    </div>
-  </section>
+        <article>
+          <h3>Open Source Contributor</h3>
+          <span>GitHub | 2023 – Present</span>
+          <p>Contributed to projects, fixed bugs, and implemented small features.</p>
+        </article>
+      </div>
+    </section>
 
-  <!-- Interests Section -->
-  <section class="section" id="interests">
-    <h2>Interests</h2>
-    <ul>
-      <li>Swimming 🏊</li>
-      <li>Coding 💻</li>
-      <li>Games 🎮</li>
-      <li>Exploring new technologies 🚀</li>
-    </ul>
-  </section>
+    <!-- Interests -->
+    <section id="interests">
+      <h2>Interests</h2>
+      <ul>
+        <li>Swimming 🏊</li>
+        <li>Coding 💻</li>
+        <li>Games 🎮</li>
+        <li>Exploring new technologies 🚀</li>
+      </ul>
+    </section>
+  </div>
 
   <footer>
-    <hr>
-    <p>Contact: 2303a52003@sru.edu.in | SR University</p>
+    <p>© 2025 Vrindha | Contact: 2303a52003@sru.edu.in</p>
   </footer>
 </body>
 </html>
